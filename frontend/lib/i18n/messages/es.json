@@ -1,0 +1,202 @@
+{
+  "Metadata": {
+    "title": "Chalé Online",
+    "description": "Reservas directas para chalés rústicos en Campos do Jordão."
+  },
+  "Common": {
+    "tentarDeNovo": "Intentar de nuevo",
+    "voltarHome": "Volver al inicio",
+    "voltar": "Volver",
+    "carregando": "Cargando...",
+    "erroGenerico": "No pudimos completar la operación ahora. Inténtalo de nuevo en unos instantes."
+  },
+  "ApiErrors": {
+    "reservationConflict": "Este chalé acaba de ser reservado para esas fechas por otro huésped.",
+    "chaleNotFound": "Este chalé ya no está disponible.",
+    "reservaNotFound": "No encontramos esta reserva.",
+    "validationError": "No pudimos procesar los datos ingresados. Revisa los campos e inténtalo de nuevo.",
+    "upstreamUnavailable": "No pudimos contactar al servidor ahora. Inténtalo de nuevo en unos instantes."
+  },
+  "HeaderNav": {
+    "wordmarkAriaLabel": "Chalé Online — página de inicio",
+    "inicio": "Inicio",
+    "faq": "Preguntas frecuentes",
+    "minhaReserva": "Mi Reserva",
+    "navegacaoPrincipal": "Navegación principal"
+  },
+  "LanguageSelector": {
+    "ariaLabel": "Selector de idioma"
+  },
+  "Home": {
+    "title": "Chalés en Campos do Jordão",
+    "subtitle": "Chalés rústicos, listos para tu próxima estadía en familia.",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "estrutura": "Estructura",
+    "tipo": "Tipo {tipo}",
+    "buscar": "Buscar",
+    "buscando": "Buscando chalés disponibles",
+    "buscandoSrOnly": "Buscando chalés disponibles...",
+    "semResultados": "No hay chalés disponibles para esas fechas.",
+    "resultados": "{count, plural, one {# chalé disponible} other {# chalés disponibles}}",
+    "todosChalesTitulo": "Todos los chalés ({count})",
+    "todosChalesAviso": "Selecciona las fechas arriba para confirmar disponibilidad."
+  },
+  "HomeError": {
+    "titulo": "No pudimos cargar los chalés",
+    "subtitulo": "Inténtalo de nuevo en unos instantes."
+  },
+  "ChaletGrid": {
+    "vazio": "No hay chalés disponibles en este momento."
+  },
+  "ChaletCard": {
+    "tipo": "Tipo {tipo}",
+    "porNoite": "por noche",
+    "fotoAlt": "Foto ilustrativa del chalé {nome}"
+  },
+  "ChaleDetalhe": {
+    "tipo": "Tipo {tipo}",
+    "porNoite": "por noche",
+    "reservar": "Reservar ahora",
+    "verAvaliacoes": "Ver reseñas",
+    "quartos": "{count, plural, one {# habitación} other {# habitaciones}}",
+    "banheiros": "{count, plural, one {# baño} other {# baños}}",
+    "comodidades": "Comodidades",
+    "avaliacoes": "Reseñas"
+  },
+  "ChaleDetalheError": {
+    "titulo": "No pudimos cargar este chalé",
+    "subtitulo": "Inténtalo de nuevo en unos instantes."
+  },
+  "ChaleDetalheLoading": {
+    "carregando": "Cargando chalé..."
+  },
+  "ChaleNaoEncontrado": {
+    "titulo": "Este chalé no está disponible",
+    "mensagem": "El chalé al que intentaste acceder no existe o ya no está en el catálogo."
+  },
+  "ChaleGaleria": {
+    "semFotos": "No hay fotos disponibles del chalé {nomeChale}",
+    "video": "Video del chalé {nomeChale}",
+    "foto": "Foto {indice} de {total} del chalé {nomeChale}",
+    "verVideo": "Ver video del chalé {nomeChale}",
+    "verFoto": "Ver foto {indice} del chalé {nomeChale}",
+    "miniaturaFoto": "Miniatura de la foto {indice} del chalé {nomeChale}"
+  },
+  "AvaliacaoList": {
+    "vazio": "Este chalé todavía no tiene reseñas.",
+    "notaAriaLabel": "Calificación {nota} de 5"
+  },
+  "Reserva": {
+    "tipo": "Tipo {tipo}",
+    "title": "Reservar {nomeChale}"
+  },
+  "ReservaLoading": {
+    "carregando": "Cargando..."
+  },
+  "ReservaForm": {
+    "nomeCompleto": "Nombre completo",
+    "email": "Correo electrónico",
+    "dataInicio": "Fecha de inicio",
+    "quantidadeDiarias": "Cantidad de noches",
+    "diarias": "{count, plural, one {# noche} other {# noches}}",
+    "confirmando": "Confirmando...",
+    "reservar": "Reservar {nomeChale}",
+    "confirmacaoTitulo": "Chalé reservado. Guarda el código para consultar tu reserva más tarde.",
+    "horas48": "Tienes 48 horas para completar el pago simulado.",
+    "valorTotal": "Monto total: <strong>{valor}</strong>",
+    "irParaPagamento": "Ir al pago",
+    "consultarDepois": "Consultar esta reserva más tarde",
+    "verOutrosChales": "Ver otros chalés"
+  },
+  "Pagamento": {
+    "title": "Pago",
+    "jaPago": "Esta reserva ya está pagada — nada que hacer aquí."
+  },
+  "PagamentoLoading": {
+    "carregando": "Cargando..."
+  },
+  "PagamentoNaoEncontrada": {
+    "titulo": "Reserva no encontrada",
+    "mensagem": "El código ingresado no corresponde a ninguna reserva."
+  },
+  "PagamentoForm": {
+    "formaPagamento": "Forma de pago (simulado)",
+    "cartaoCredito": "Tarjeta de crédito",
+    "pix": "Pix",
+    "boleto": "Boleto",
+    "cartaoTeste": "Tarjeta de prueba (simular rechazo)",
+    "aviso": "No se solicita ningún dato real de pago — esto es una simulación.",
+    "pagamentoRecusadoPadrao": "Pago rechazado.",
+    "tentarNovamenteJanela": "Todavía puedes intentarlo de nuevo dentro de la ventana de 48h.",
+    "confirmando": "Confirmando...",
+    "confirmar": "Confirmar pago",
+    "pagamentoConfirmado": "¡Pago confirmado!",
+    "emailConfirmacao": "Enviamos la confirmación por correo electrónico. Tu reserva está garantizada.",
+    "consultarDepois": "Consultar esta reserva más tarde"
+  },
+  "ReservaExpirada": {
+    "titulo": "Reserva expirada",
+    "mensagem": "Esta reserva expiró y el chalé fue liberado.",
+    "novaReserva": "Puedes hacer una nueva reserva en cualquier momento.",
+    "verChales": "Ver chalés disponibles"
+  },
+  "Consulta": {
+    "title": "Mi Reserva",
+    "instrucao": "Ingresa el código o pega el enlace que recibiste al confirmar tu reserva."
+  },
+  "ConsultaForm": {
+    "label": "Código o enlace de la reserva",
+    "placeholder": "Pega el enlace recibido o escribe el código",
+    "consultar": "Consultar"
+  },
+  "ConsultaResultado": {
+    "title": "Mi Reserva",
+    "statusAguardandoPagamento": "Esperando pago",
+    "statusPaga": "Pagada",
+    "statusCancelada": "Cancelada",
+    "statusDesconhecido": "Estado desconocido",
+    "valorTotal": "Monto total: <strong>{valor}</strong>",
+    "irParaPagamento": "Ir al pago"
+  },
+  "ConsultaResultadoLoading": {
+    "carregando": "Cargando..."
+  },
+  "ConsultaNaoEncontrada": {
+    "titulo": "Reserva no encontrada",
+    "mensagem": "El código ingresado no corresponde a ninguna reserva.",
+    "tentarNovamente": "Intentar de nuevo"
+  },
+  "Faq": {
+    "title": "Preguntas frecuentes",
+    "vazio": "No hay preguntas disponibles en este momento.",
+    "q1": {
+      "pergunta": "¿Cómo funciona la reserva de un chalé?",
+      "resposta": "Elige las fechas de check-in y check-out en la búsqueda de la página de inicio, selecciona un chalé disponible y confirma tus datos. La reserva queda con el pago simulado pendiente por hasta 48 horas — si no se confirma en ese plazo, se cancela automáticamente y las fechas vuelven a estar disponibles."
+    },
+    "q2": {
+      "pergunta": "¿El pago es real?",
+      "resposta": "No. Chalé Online es un proyecto de portafolio y el pago es simulado — no se cobra ningún monto real. La simulación existe solo para demostrar el flujo completo de reserva, desde el check-in hasta el pago."
+    },
+    "q3": {
+      "pergunta": "¿Cuánto tiempo tengo para confirmar el pago antes de que la reserva expire?",
+      "resposta": "48 horas desde el momento en que se crea la reserva. Después de ese plazo, si el pago simulado no se completa, la reserva se cancela automáticamente y las noches reservadas vuelven a estar disponibles para otros huéspedes."
+    },
+    "q4": {
+      "pergunta": "¿Puedo cancelar una reserva ya confirmada?",
+      "resposta": "La cancelación de reservas ya pagadas no está disponible en esta versión del producto. Si tu reserva todavía tiene el pago pendiente, se cancela automáticamente después de 48 horas sin confirmación."
+    },
+    "q5": {
+      "pergunta": "¿Qué tipos de chalé están disponibles?",
+      "resposta": "Tres tipos, según la estructura: Tipo A (2 habitaciones, 1 baño), Tipo B (3 habitaciones, 1 baño) y Tipo C (4 habitaciones, 2 baños). Puedes filtrar por tipo en la búsqueda de la página de inicio."
+    },
+    "q6": {
+      "pergunta": "¿Cómo consulto una reserva ya realizada?",
+      "resposta": "Usa el enlace \"Mi Reserva\" en el menú de navegación e ingresa el código de consulta que recibiste al crear la reserva."
+    },
+    "q7": {
+      "pergunta": "¿El sitio está disponible en otros idiomas además del portugués?",
+      "resposta": "Sí — Chalé Online está disponible en portugués, inglés y español. Usa el selector de idioma en el menú de navegación para cambiar en cualquier momento."
+    }
+  }
+}

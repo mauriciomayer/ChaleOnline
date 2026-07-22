@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-6);
+  list-style: none;
+  padding: 0 var(--spacing-8);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 var(--spacing-5);
+  }
+}
+
+.empty {
+  font-family: var(--font-sans);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: var(--spacing-9) var(--spacing-8);
+}

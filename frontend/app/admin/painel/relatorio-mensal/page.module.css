@@ -1,0 +1,189 @@
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--spacing-9) var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.navPainel {
+  font-family: var(--font-sans);
+  font-size: 13px;
+}
+
+.navPainel a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.filtro {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-4);
+}
+
+.filtroLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.filtroLabel input {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-md);
+  padding: 8px 12px;
+}
+
+.filtroBotao {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--rounded-md);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.filtroBotao:hover,
+.filtroBotao:focus-visible {
+  background: color-mix(in srgb, var(--color-primary) 85%, black);
+}
+
+.erro {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-error);
+  background: color-mix(in srgb, var(--color-error) 10%, var(--color-surface));
+  border-radius: var(--rounded-md);
+  padding: 12px;
+}
+
+/* AC #3 — mensagem direta, nunca um gráfico vazio ou placeholder decorativo. */
+.vazio {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.resumo {
+  display: flex;
+  gap: var(--spacing-6);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.resumo strong {
+  color: var(--color-text-primary);
+}
+
+/* Mesma técnica de tabela responsiva de app/admin/painel/page.module.css (Story 3.2). */
+.tabelaWrapper {
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.tabela th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabela td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  vertical-align: middle;
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Reserva cancelada aparece na lista (AC #2) mas visualmente esmaecida, pra ficar claro que não
+   conta no total de valores mostrado no resumo. */
+.linha[data-cancelada="true"] {
+  opacity: 0.6;
+}
+
+.rotuloCancelada {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 640px) {
+  .tabela thead {
+    display: none;
+  }
+
+  .tabela,
+  .tabela tbody,
+  .tabela tr,
+  .tabela td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela tr {
+    padding: var(--spacing-4) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .tabela td {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: 4px 0;
+  }
+
+  .tabela td::before {
+    content: attr(data-label);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    flex-shrink: 0;
+  }
+
+  .filtro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

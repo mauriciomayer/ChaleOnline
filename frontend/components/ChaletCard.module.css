@@ -1,0 +1,95 @@
+.card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-lg);
+  overflow: hidden;
+  box-shadow: none;
+  transition: transform 260ms ease-out, box-shadow 260ms ease-out;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(22, 51, 43, 0.18);
+}
+
+.textureStrip {
+  height: 4px;
+  background: color-mix(in srgb, var(--color-text-muted) 32%, var(--color-border));
+}
+
+.photoWrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--color-background);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoMotif {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.badgeRooms {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-text-primary);
+  border-radius: var(--rounded-sm);
+  padding: 4px 8px;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.body {
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tipo {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.priceCaption {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+}

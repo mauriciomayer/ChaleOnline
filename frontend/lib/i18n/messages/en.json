@@ -1,0 +1,202 @@
+{
+  "Metadata": {
+    "title": "Chalé Online",
+    "description": "Direct bookings for rustic chalets in Campos do Jordão."
+  },
+  "Common": {
+    "tentarDeNovo": "Try again",
+    "voltarHome": "Back to Home",
+    "voltar": "Back",
+    "carregando": "Loading...",
+    "erroGenerico": "We couldn't complete this right now. Please try again shortly."
+  },
+  "ApiErrors": {
+    "reservationConflict": "This chalet was just booked for these dates by another guest.",
+    "chaleNotFound": "This chalet is no longer available.",
+    "reservaNotFound": "We couldn't find this booking.",
+    "validationError": "We couldn't process the information provided. Please check the fields and try again.",
+    "upstreamUnavailable": "We couldn't reach the server right now. Please try again shortly."
+  },
+  "HeaderNav": {
+    "wordmarkAriaLabel": "Chalé Online — home page",
+    "inicio": "Home",
+    "faq": "FAQ",
+    "minhaReserva": "My Booking",
+    "navegacaoPrincipal": "Main navigation"
+  },
+  "LanguageSelector": {
+    "ariaLabel": "Language selector"
+  },
+  "Home": {
+    "title": "Chalets in Campos do Jordão",
+    "subtitle": "Rustic chalets, ready for your next family getaway.",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "estrutura": "Layout",
+    "tipo": "Type {tipo}",
+    "buscar": "Search",
+    "buscando": "Searching for available chalets",
+    "buscandoSrOnly": "Searching for available chalets...",
+    "semResultados": "No chalets available for these dates.",
+    "resultados": "{count, plural, one {# chalet available} other {# chalets available}}",
+    "todosChalesTitulo": "All chalets ({count})",
+    "todosChalesAviso": "Select dates above to confirm availability."
+  },
+  "HomeError": {
+    "titulo": "We couldn't load the chalets",
+    "subtitulo": "Please try again shortly."
+  },
+  "ChaletGrid": {
+    "vazio": "No chalets available at the moment."
+  },
+  "ChaletCard": {
+    "tipo": "Type {tipo}",
+    "porNoite": "per night",
+    "fotoAlt": "Illustrative photo of {nome} chalet"
+  },
+  "ChaleDetalhe": {
+    "tipo": "Type {tipo}",
+    "porNoite": "per night",
+    "reservar": "Book now",
+    "verAvaliacoes": "See reviews",
+    "quartos": "{count, plural, one {# bedroom} other {# bedrooms}}",
+    "banheiros": "{count, plural, one {# bathroom} other {# bathrooms}}",
+    "comodidades": "Amenities",
+    "avaliacoes": "Reviews"
+  },
+  "ChaleDetalheError": {
+    "titulo": "We couldn't load this chalet",
+    "subtitulo": "Please try again shortly."
+  },
+  "ChaleDetalheLoading": {
+    "carregando": "Loading chalet..."
+  },
+  "ChaleNaoEncontrado": {
+    "titulo": "This chalet is not available",
+    "mensagem": "The chalet you tried to access doesn't exist or is no longer listed."
+  },
+  "ChaleGaleria": {
+    "semFotos": "No photos available for {nomeChale}",
+    "video": "Video of {nomeChale}",
+    "foto": "Photo {indice} of {total} of {nomeChale}",
+    "verVideo": "Watch video of {nomeChale}",
+    "verFoto": "See photo {indice} of {nomeChale}",
+    "miniaturaFoto": "Thumbnail of photo {indice} of {nomeChale}"
+  },
+  "AvaliacaoList": {
+    "vazio": "This chalet doesn't have reviews yet.",
+    "notaAriaLabel": "Rating {nota} of 5"
+  },
+  "Reserva": {
+    "tipo": "Type {tipo}",
+    "title": "Book {nomeChale}"
+  },
+  "ReservaLoading": {
+    "carregando": "Loading..."
+  },
+  "ReservaForm": {
+    "nomeCompleto": "Full name",
+    "email": "Email",
+    "dataInicio": "Start date",
+    "quantidadeDiarias": "Number of nights",
+    "diarias": "{count, plural, one {# night} other {# nights}}",
+    "confirmando": "Confirming...",
+    "reservar": "Book {nomeChale}",
+    "confirmacaoTitulo": "Chalet booked. Keep the code to check your booking later.",
+    "horas48": "You have 48 hours to complete the simulated payment.",
+    "valorTotal": "Total amount: <strong>{valor}</strong>",
+    "irParaPagamento": "Go to payment",
+    "consultarDepois": "Check this booking later",
+    "verOutrosChales": "See other chalets"
+  },
+  "Pagamento": {
+    "title": "Payment",
+    "jaPago": "This booking is already paid — nothing to do here."
+  },
+  "PagamentoLoading": {
+    "carregando": "Loading..."
+  },
+  "PagamentoNaoEncontrada": {
+    "titulo": "Booking not found",
+    "mensagem": "The code you entered doesn't match any booking."
+  },
+  "PagamentoForm": {
+    "formaPagamento": "Payment method (simulated)",
+    "cartaoCredito": "Credit Card",
+    "pix": "Pix",
+    "boleto": "Bank Slip",
+    "cartaoTeste": "Test card (simulate decline)",
+    "aviso": "No real payment data is requested — this is a simulation.",
+    "pagamentoRecusadoPadrao": "Payment declined.",
+    "tentarNovamenteJanela": "You can still try again within the 48h window.",
+    "confirmando": "Confirming...",
+    "confirmar": "Confirm payment",
+    "pagamentoConfirmado": "Payment confirmed!",
+    "emailConfirmacao": "We've sent the confirmation by email. Your booking is guaranteed.",
+    "consultarDepois": "Check this booking later"
+  },
+  "ReservaExpirada": {
+    "titulo": "Booking expired",
+    "mensagem": "This booking has expired and the chalet was released.",
+    "novaReserva": "You can make a new booking at any time.",
+    "verChales": "See available chalets"
+  },
+  "Consulta": {
+    "title": "My Booking",
+    "instrucao": "Enter the code or paste the link you received when your booking was confirmed."
+  },
+  "ConsultaForm": {
+    "label": "Booking code or link",
+    "placeholder": "Paste the link you received or type the code",
+    "consultar": "Check"
+  },
+  "ConsultaResultado": {
+    "title": "My Booking",
+    "statusAguardandoPagamento": "Awaiting payment",
+    "statusPaga": "Paid",
+    "statusCancelada": "Cancelled",
+    "statusDesconhecido": "Unknown status",
+    "valorTotal": "Total amount: <strong>{valor}</strong>",
+    "irParaPagamento": "Go to payment"
+  },
+  "ConsultaResultadoLoading": {
+    "carregando": "Loading..."
+  },
+  "ConsultaNaoEncontrada": {
+    "titulo": "Booking not found",
+    "mensagem": "The code you entered doesn't match any booking.",
+    "tentarNovamente": "Try again"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "vazio": "No questions available at the moment.",
+    "q1": {
+      "pergunta": "How does booking a chalet work?",
+      "resposta": "Choose your check-in and check-out dates in the Home search, pick an available chalet and confirm your details. The booking stays with a simulated payment pending for up to 48 hours — if it isn't confirmed within that time, it's automatically cancelled and the dates become available again."
+    },
+    "q2": {
+      "pergunta": "Is the payment real?",
+      "resposta": "No. Chalé Online is a portfolio project and the payment is simulated — no real amount is ever charged. The simulation exists only to demonstrate the full booking flow, from check-in to payment."
+    },
+    "q3": {
+      "pergunta": "How long do I have to confirm payment before the booking expires?",
+      "resposta": "48 hours from the moment the booking is created. After that, if the simulated payment hasn't been completed, the booking is automatically cancelled and the reserved nights become available to other guests again."
+    },
+    "q4": {
+      "pergunta": "Can I cancel a booking that's already confirmed?",
+      "resposta": "Cancelling already-paid bookings isn't available in this version of the product. If your booking still has a pending payment, it's automatically cancelled after 48 hours without confirmation."
+    },
+    "q5": {
+      "pergunta": "What chalet types are available?",
+      "resposta": "Three types, based on layout: Type A (2 bedrooms, 1 bathroom), Type B (3 bedrooms, 1 bathroom) and Type C (4 bedrooms, 2 bathrooms). You can filter by type in the Home search."
+    },
+    "q6": {
+      "pergunta": "How do I check an existing booking?",
+      "resposta": "Use the \"My Booking\" link in the navigation menu and enter the reference code you received when you created the booking."
+    },
+    "q7": {
+      "pergunta": "Is the site available in other languages besides Portuguese?",
+      "resposta": "Yes — Chalé Online is available in Portuguese, English and Spanish. Use the language selector in the navigation menu to switch at any time."
+    }
+  }
+}

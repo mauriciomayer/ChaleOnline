@@ -1,0 +1,31 @@
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  list-style: none;
+}
+
+.item {
+  padding: var(--spacing-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-md);
+}
+
+.nota {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-rating);
+  letter-spacing: 0.05em;
+}
+
+.comentario {
+  margin-top: 6px;
+}
+
+.vazio {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}

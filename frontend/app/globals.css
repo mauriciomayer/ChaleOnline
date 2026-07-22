@@ -1,0 +1,85 @@
+:root {
+  /* Amanhecer Alpino — color tokens (DESIGN.md) */
+  --color-primary: #1e7a5f;
+  --color-secondary: #3e8fb0;
+  --color-accent: #ffb74d;
+  --color-background: #f7faf9;
+  --color-surface: #ffffff;
+  --color-text-primary: #16332b;
+  --color-text-secondary: #3e6b5c;
+  --color-text-muted: #6c8880;
+  --color-border: #dceae4;
+  --color-rating: #8f4e0c;
+  --color-success: #2fa66b;
+  --color-error: #e4573d;
+
+  /* Refúgio Editorial — typography tokens */
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+
+  /* Spacing scale */
+  --spacing-4: 22px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 44px;
+  --spacing-9: 48px;
+  --spacing-10: 52px;
+
+  /* Rounded corners */
+  --rounded-sm: 3px;
+  --rounded-md: 4px;
+  --rounded-lg: 6px;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-primary);
+  background: var(--color-background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Token "body" (DESIGN.md) — texto de corpo/descritivo (comentários de avaliação etc). */
+.body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
