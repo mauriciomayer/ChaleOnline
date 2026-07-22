@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ChaleOnline.Api/ChaleOnline.Api.csproj" />
+    <Project Path="src/ChaleOnline.Application/ChaleOnline.Application.csproj" />
+    <Project Path="src/ChaleOnline.Domain/ChaleOnline.Domain.csproj" />
+    <Project Path="src/ChaleOnline.Infrastructure/ChaleOnline.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ChaleOnline.Api.IntegrationTests/ChaleOnline.Api.IntegrationTests.csproj" />
+    <Project Path="tests/ChaleOnline.Application.Tests/ChaleOnline.Application.Tests.csproj" />
+  </Folder>
+</Solution>
