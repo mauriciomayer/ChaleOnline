@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChaleOnline.Application\ChaleOnline.Application.csproj" />
+    <ProjectReference Include="..\ChaleOnline.Domain\ChaleOnline.Domain.csproj" />
+  </ItemGroup>
+
+  <!-- Necessário pro AddIdentity<TUser,TRole>()/UserManager/etc. (Story 3.1, AD-5) — esses tipos
+       vivem no shared framework do ASP.NET Core, não numa dependência NuGet isolada; um projeto
+       Microsoft.NET.Sdk (biblioteca de classes, não Sdk.Web) precisa desta referência explícita
+       pra enxergá-los, sem precisar virar um projeto Web. -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

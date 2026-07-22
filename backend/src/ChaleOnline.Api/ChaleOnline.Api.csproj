@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>74db225e-68bb-44b2-88ab-d2d072359f5f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.23" />
+    <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <!-- Force a patched Microsoft.OpenApi (GHSA-v5pm-xwqc-g5wc, fixed >=2.7.5) over the vulnerable 2.0.0 pulled in transitively -->
+    <PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+    <!-- Hangfire.MySqlStorage pulls old, vulnerable transitive packages it never actually exercises
+         on this MySQL-only setup (System.Data.SqlClient is a legacy multi-provider leftover) — force
+         patched versions over them, same technique already used above for Microsoft.OpenApi. -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChaleOnline.Application\ChaleOnline.Application.csproj" />
+    <ProjectReference Include="..\ChaleOnline.Infrastructure\ChaleOnline.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

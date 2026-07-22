@@ -1,0 +1,6 @@
+@ChaleOnline.Api_HostAddress = http://localhost:5122
+
+GET {{ChaleOnline.Api_HostAddress}}/api/chales
+Accept: application/json
+
+###
